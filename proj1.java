@@ -44,7 +44,11 @@ package assignment01;
 public class NoTrack implements TrackCheck ...
 
 package assignment01;
-public class AITrack implements TrackCheck ...
+public class AITrack implements TrackCheck 
+{
+  takenSet.retainAll(aiElectiveSet);
+
+}
 
 package assignment01;
 public class CyberTrack implements TrackCheck ...
