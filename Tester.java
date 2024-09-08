@@ -3,11 +3,11 @@ package assignment01;
 public class Tester {
 
 	public static void main(String[] args) {
-		Student student1 = new Student("B00123456", "FirstOne LastOne");
-		Student student2 = new Student("B00123457", "FirstTwo LastTwo");
-		Student student3 = new Student("B00123458", "FirstThree LastThree");
-		Student student4 = new Student("B00123459", "FirstFour LastFour");
-		Student student5 = new Student("B00123460", "FirstFive LastFive");
+		assignment01 student1 = new assignment01("B00123456", "FirstOne LastOne");
+		assignment01 student2 = new assignment01("B00123457", "FirstTwo LastTwo");
+		assignment01 student3 = new assignment01("B00123458", "FirstThree LastThree");
+		assignment01 student4 = new assignment01("B00123459", "FirstFour LastFour");
+		assignment01 student5 = new assignment01("B00123460", "FirstFive LastFive");
 		student1.add("CS551");
 		student1.add("CS571");
 		student1.add("CS575");
