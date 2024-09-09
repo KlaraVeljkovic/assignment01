@@ -20,18 +20,19 @@ public class CyberTrack implements TrackCheck
         // Get intersection with Cyber electives
         takenSet.retainAll(cyberElectiveSet);
 
-        // Check mutual exclusivity of CS558 and CS559
+        // Check mutual exclusivity of CS536 and CS580E and Inclusivity of both CS558 and CS559
         boolean hasCS536 = list.contains(COURSE_536);
         boolean hasCS580E = list.contains(COURSE_580E);
         boolean hasCS558 = list.contains(COURSE_558);
         boolean hasCS559 = list.contains(COURSE_559);
 
-        // Ensure only one of CS558 or CS559 is used
+        // Ensure only one of CS536 or CS580E is used
         if (hasCS536 && hasCS580E) 
         {
-            return false;  // Only one of CS558 and CS559 can be used
+            return false;  // Only one of CS536 and CS580E can be used
         }
         
+        // Ensure both CS558 and CS559 are taken
         if (!(hasCS558 && hasCS559)) 
         {
             return false; // both 558 and 559 are needed
