@@ -3,11 +3,15 @@ package assignment01;
 public class Tester {
 
 	public static void main(String[] args) {
-		assignment01 student1 = new assignment01("B00123456", "FirstOne LastOne");
-		assignment01 student2 = new assignment01("B00123457", "FirstTwo LastTwo");
-		assignment01 student3 = new assignment01("B00123458", "FirstThree LastThree");
-		assignment01 student4 = new assignment01("B00123459", "FirstFour LastFour");
-		assignment01 student5 = new assignment01("B00123460", "FirstFive LastFive");
+		Student student1 = new Student("B00123456", "FirstOne LastOne");
+		Student student2 = new Student("B00123457", "FirstTwo LastTwo");
+		Student student3 = new Student("B00123458", "FirstThree LastThree");
+		Student student4 = new Student("B00123459", "FirstFour LastFour");
+		Student student5 = new Student("B00123460", "FirstFive LastFive");
+		Student student6 = new Student("B00123461", "FirstSix LastSix");
+		Student student7 = new Student("B00123462", "FirstSeven LastSeven");
+		Student student8 = new Student("B00123463", "FirstEight LastEight");
+		Student student9 = new Student("B00123464", "FirstNine LastNone");
 		student1.add("CS551");
 		student1.add("CS571");
 		student1.add("CS575");
@@ -56,6 +60,44 @@ public class Tester {
 		student5.add("CS580E");
 		student5.add("CS558");
 
+		student6.add("CS551");
+		student6.add("CS571");
+		student6.add("CS575");
+		student6.add("CS559");
+		student6.add("CS536");
+		student6.add("CS565");
+		student6.add("CS580E");
+		student6.add("CS560");
+
+		student7.add("CS551");
+		student7.add("CS571");
+		student7.add("CS575");
+		student7.add("CS560");
+		student7.add("CS536");
+		student7.add("CS565");
+		student7.add("CS580E");
+		student7.add("CS558");
+		
+		student8.add("CS551");
+		student8.add("CS571");
+		student8.add("CS575");
+		student8.add("CS559");
+		student8.add("CS560");
+		student8.add("CS565");
+		student8.add("CS515");
+		student8.add("CS580E");
+		student8.add("CS558");
+		
+		student9.add("CS551");
+		student9.add("CS571");
+		student9.add("CS575");
+		student9.add("CS559");
+		student9.add("CS536");
+		student9.add("CS560");
+		student9.add("CS515");
+		student9.add("CS580E");
+		student9.add("CS558");
+		
 		System.out.println("Student 1: " + student1);
 		student1.setTrack(new NoTrack());
 		System.out.println(student1.checkTrack());
@@ -95,6 +137,33 @@ public class Tester {
 		System.out.println(student5.checkTrack());
 		student5.setTrack(new CyberTrack());
 		System.out.println(student5.checkTrack());
+		System.out.println("Student 6: " + student6);
+		student6.setTrack(new NoTrack());
+		System.out.println(student6.checkTrack());
+		student6.setTrack(new AITrack());
+		System.out.println(student6.checkTrack());
+		student6.setTrack(new CyberTrack());
+		System.out.println(student6.checkTrack());
+		System.out.println("Student 7: " + student7);
+		student7.setTrack(new NoTrack());
+		System.out.println(student7.checkTrack());
+		student7.setTrack(new AITrack());
+		System.out.println(student7.checkTrack());
+		student7.setTrack(new CyberTrack());
+		System.out.println(student7.checkTrack());
+		System.out.println("Student 8: " + student8);
+		student8.setTrack(new NoTrack());
+		System.out.println(student8.checkTrack());
+		student8.setTrack(new AITrack());
+		System.out.println(student8.checkTrack());
+		student8.setTrack(new CyberTrack());
+		System.out.println(student8.checkTrack());
+		System.out.println("Student 9: " + student9);
+		student9.setTrack(new NoTrack());
+		System.out.println(student9.checkTrack());
+		student9.setTrack(new AITrack());
+		System.out.println(student9.checkTrack());
+		student9.setTrack(new CyberTrack());
+		System.out.println(student9.checkTrack());
 	}
-
 }
